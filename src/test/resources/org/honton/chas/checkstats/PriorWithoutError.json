@@ -1,0 +1,16 @@
+{
+"files" : [
+"org/honton/chas/mmr_aggr/App.java",
+"org/honton/chas/mmr_aggr/App2.java"
+],
+"stats" : {
+  "Findbugs": {
+    "org/honton/chas/mmr_aggr/App.java": 4
+  },
+  "Checkstyle": {
+    "src/main/java/org/honton/chas/mmr_aggr/App.java": {
+      "warning": 32
+    }
+  }
+}
+}
