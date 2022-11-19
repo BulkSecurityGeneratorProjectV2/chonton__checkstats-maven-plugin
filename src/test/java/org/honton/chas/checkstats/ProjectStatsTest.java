@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
 import java.net.URL;
+import java.nio.file.Files;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -23,7 +24,7 @@ public class ProjectStatsTest {
     @Test
     public void testFileRoundTrip() throws IOException {
         ProjectStats expected = createExpected();
-        File tmp = File.createTempFile("test", "reportRootStat");
+        File tmp = Files.createTempFile("test", "reportRootStat").toFile();
         expected.write(tmp);
         
         ProjectStats actual = ProjectStats.read(tmp);
